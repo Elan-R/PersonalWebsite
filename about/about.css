@@ -1,0 +1,47 @@
+aside {
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    left: 0;
+
+}
+
+#ElanRonen {
+    position: absolute;
+}
+
+div > img {
+    width: 20vw;
+    height: auto;
+    border-radius: 1vw;
+}
+
+a > img {
+    width: 3vw;
+    height: auto;
+    padding: 0.2vw;
+}
+
+main {
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    right: 0;
+    overflow: auto;
+}
+
+p {
+    font-family: "Roboto Mono";
+    text-indent: 2vw;
+    padding: 1vw;
+    padding-left: 0vw;
+    padding-right: 5vw;
+}
+
+p:first-child {
+    padding-top: 2vw;
+}
+
+p:last-child {
+    padding-bottom: 7vw;
+}

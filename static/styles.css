@@ -1,0 +1,56 @@
+html {
+    background-color: black;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+}
+
+.centered {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+nav {
+    --nav-width: 1;
+
+    position: fixed;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0);
+
+    display: flex;
+    border-radius: min(14.4px, calc(14.4 / var(--nav-width) * 100vw));
+    background-color: rgba(100, 100, 100, 0.5);
+    backdrop-filter: blur(min(2.88px, calc(2.88 / var(--nav-width) * 100vw)));
+    padding: min(7.2px, calc(7.2 / var(--nav-width) * 100vw));
+}
+
+nav > a {
+    position: static;
+
+    border-radius: min(14.4px, calc(14.4 / var(--nav-width) * 100vw));
+    background-color: rgba(-255, -255, -255, 0.6);
+    backdrop-filter: blur(4px);
+    padding: min(7.2px, calc(7.2 / var(--nav-width) * 100vw));
+
+    font-size: min(25.92px, calc(25.92 / var(--nav-width) * 100vw));
+    font-family: "Roboto Mono";
+    text-decoration: none;
+}
+
+nav > a ~ a {
+    margin-left: min(10.08px, calc(10.08 / var(--nav-width) * 100vw));
+}
+
+nav > a:hover {
+    background-color: rgba(-50, 30, -50, 0.5);
+}
