@@ -53,6 +53,27 @@ function random(a, b){
     return Math.random() * (b - a) + a;
 }
 
+function circleLayOutElements(elements) {
+    const degree = 2 * Math.PI / elements.length;
+
+    const scale = 13;
+    let xScale, yScale;
+
+    if (WIDTH > HEIGHT) {
+        xScale = scale * WIDTH / HEIGHT;
+        yScale = scale;
+    } else {
+        xScale = scale;
+        yScale = scale * HEIGHT / WIDTH;
+    }
+
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        element.style.marginLeft = xScale * Math.cos(degree * i - Math.PI / 2) + "vw";
+        element.style.marginTop = yScale * Math.sin(degree * i - Math.PI / 2) + "vw";
+    }
+}
+
 function setUpDots(drawing) {
     const dots = new Dots(100, drawing)
 
@@ -157,5 +178,5 @@ class CanvasDrawing {
 document.fonts.ready.then(function() {
     const nav = document.querySelector("nav");
 
-    nav.style.setProperty("--nav-width", nav.getBoundingClientRect().width + 40);
+    if (nav !== null) nav.style.setProperty("--nav-width", nav.getBoundingClientRect().width + 40);
 });

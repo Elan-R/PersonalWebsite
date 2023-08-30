@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:3.0
+FN;CHARSET=UTF-8:Elan Ronen
+N;CHARSET=UTF-8:Ronen;Elan;;;
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:elanronen@gmail.com
+TEL;TYPE=CELL:6098271505
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;;;;United States
+TITLE;CHARSET=UTF-8:Software Developer
+X-SOCIALPROFILE;TYPE=LinkedIn:https://www.linkedin.com/in/elanronen/
+X-SOCIALPROFILE;TYPE=Website:https://elan.ronen.life/
+REV:2023-08-30T21:12:45.321Z
+END:VCARD
