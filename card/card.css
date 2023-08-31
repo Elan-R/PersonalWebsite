@@ -23,7 +23,6 @@ a {
     background-color: rgba(100, 100, 100, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 5px;
 
     text-decoration: none;
     font-family: "Roboto Mono";
