@@ -2,21 +2,42 @@ canvas {
     position: absolute;
 }
 
-main > a {
+h1 {
+    width: 100%;
+    text-align: center;
+    font-family: "Merriweather";
+    font-size: 60px;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+div {
+    position: absolute;
+}
+
+a {
     display: block;
-    width: 80%;
+    width: 80vw;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
 
     border-radius: 14.4px;
     background-color: rgba(100, 100, 100, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 7.2px;
+    padding: 5px;
 
     text-decoration: none;
     font-family: "Roboto Mono";
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
+}
+
+img {
+    position: relative;
+    left: 50%;
+    margin: 20px;
+    margin-left: -100px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }

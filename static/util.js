@@ -1,5 +1,3 @@
-console.log("8/12/2023")
-
 const WIDTH = window.innerWidth;
 const HEIGHT = window.innerHeight;
 const DOT_SPEED = 1/50;
